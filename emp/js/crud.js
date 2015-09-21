@@ -69,20 +69,20 @@ function updateData(a) {
     var e = document.getElementById("inputDept").value;
     var f = document.getElementById("inputDesig").value;
     if ("" == c) {
-        alert("Please input  Name..!!");
+        document.getElementById("alertDiv").innerHTML = " <h5><font color='#ff0000' align='center'>Please input  Name..!!</font></h5>";
         return false;
     } else if ("" == d) {
-        alert("Please input  Age..!!");
+       document.getElementById("alertDiv").innerHTML = " <h5><font color='#ff0000' align='center'>Please input  Age..!!</font></h5>";
         return false;
     }
     if ("" == e) {
-        alert("Please input  Department..!!");
+        document.getElementById("alertDiv").innerHTML = " <h5><font color='#ff0000' align='center'>Please input  Department..!!</font></h5>";
         return false;
     } else if ("" == f) {
-        alert("Please input  Designation..!!");
+        document.getElementById("alertDiv").innerHTML = " <h5><font color='#ff0000' align='center'>Please input  Designation..!!</font></h5>";
         return false;
     } else if (isNaN(d) || d <= 0) {
-        alert("Invalid Age");
+        document.getElementById("alertDiv").innerHTML = " <h5><font color='#ff0000' align='center'>Invalid Age..!!</font></h5>";
         return false;
     } else {
         var g = document.getElementById("empTable");
